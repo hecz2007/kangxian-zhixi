@@ -1,0 +1,14 @@
+# 康险智析 · 科研Demo原型 依赖清单
+# 安装命令：pip install -r requirements.txt
+# 启动命令：streamlit run app.py
+#
+# ⚠️ 本系统是大学生科研Demo原型，严禁商用、严禁临床诊断。
+# ⚠️ 训练数据集 SEER、TCGA、WDBC、BreakHis 均为海外公开数据集，缺少国内人群样本，不可落地临床。
+
+streamlit>=1.50
+pandas>=2.0
+scikit-learn>=1.4
+tensorflow>=2.16
+pillow>=10.0
+numpy>=1.26
+joblib>=1.3

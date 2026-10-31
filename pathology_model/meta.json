@@ -1,0 +1,23 @@
+{
+  "task": "BreakHis 乳腺病理二分类（benign/malignant）",
+  "class_names": [
+    "benign",
+    "malignant"
+  ],
+  "label_meaning": "sigmoid 输出 = malignant（恶性）概率；良性概率 = 1 - p",
+  "img_size": [
+    224,
+    224
+  ],
+  "backbone": "MobileNetV2 (ImageNet, frozen)",
+  "head": "GAP → Dropout(0.2) → Dense(1, sigmoid)",
+  "epochs": 5,
+  "batch_size": 8,
+  "device": "CPU",
+  "train_samples": 6723,
+  "val_samples": 1186,
+  "total_samples": 7909,
+  "val_accuracy": 0.8102867007255554,
+  "seed": 42,
+  "compliance": "科研 Demo 原型组件；BreakHis 为海外公开数据集；输出仅为阅片辅助参考概率，不能替代 IHC 免疫组化金标准。"
+}
